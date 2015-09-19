@@ -1,0 +1,16 @@
+<h3>Novo Usuário</h3>
+
+<label>E-mail</label>
+<input type="text" ng-model="usuario.email" />
+<label>Nome de Usuário</label>
+<input type="text" ng-model="usuario.nome_usuario" />
+<label>Senha</label>
+<input type="password" ng-model="usuario.senha" />
+<label>Confirma Senha</label>
+<input type="password" ng-model="usuario.confirma_senha" />
+<button ng-click="salvarUsuario()">Salvar</button>
+
+<pre>
+    Magia do angular:
+{{usuario}}
+</pre>
