@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="yumiAdmin">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proxy Wars</title>
+
+        <!--ANGULAR-->
+        <script src="lib/angular/angular-min.js"></script>
+        <script src="lib/angular/angular-locale_pt-br.js"></script>
+        <script src="lib/angular/angular-route.min.js"></script>
+        <script src="lib/angular/ui-utils.min.js"></script>
+        <script src="lib/angular/angular-animate.min.js"></script>
+        <script src="lib/angular/ngStorage.js"></script>
+        <script src="lib/angular/hotkeys.min.js"></script>
+        <link href="lib/angular/hotkeys.min.css" rel="stylesheet">
+        
+        <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+        <script src="lib/jquery/jquery-1.10.2.js"></script>
+        <script src="lib/angular/utils/ui-utils.min.js"></script>
+        
+        <!--APP-->
+        <!--BASE SISTEMA-->
+        <script src="controller/base/base.js"></script>
+        <!--FIM - BASE SISTEMA-->
+        
+        <script src="controller/auxiliar/auxiliar.js"></script>
+        <script src="controller/cadastro/usuario/controle_usuario.js"></script>
+        <!--FIM - APP-->
+
+    </head>
+    <body class="body_pw">
+        <ul>
+            <li>Cadastro</li>
+            <li><a href="#/cadastro/usuario">Usuário</a></li>
+            <li>Jogo</li>
+            <li><a href="#/jogo/gerarSoldado">Gerar Soldado</a></li>
+        </ul>
+        <div id="page-wrapper">
+            <div ng-view>
+                
+            </div>
+        </div>
+    </body>
+</html>
