@@ -1,4 +1,4 @@
-var yumiAdmin = angular.module('yumiAdmin', ['ngRoute',
+var yumiAdmin = angular.module('yumiAdmin', ['ngRoute', 'pascalprecht.translate'
 //    'ngStorage',
 //    'cfp.hotkeys',
 //    'ngSanitize'
@@ -15,4 +15,14 @@ yumiAdmin.config(['$routeProvider', function ($routeProvider) {
         }).otherwise({
             redirectTo: '/'
         });
+    }]);
+
+yumiAdmin.config(['$translateProvider', function ($translateProvider) {
+
+        // Simply register translation table as object hash
+        $translateProvider.useStaticFilesLoader({
+            prefix: 'view/language/locale-',
+            suffix: '.json'
+        });
+        $translateProvider.preferredLanguage('pt-BR');
     }]);

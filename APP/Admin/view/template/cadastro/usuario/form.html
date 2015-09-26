@@ -1,6 +1,6 @@
 <form class="form-horizontal">
     <fieldset>
-        <legend>Novo Usuário</legend>
+        <legend>{{'NEW_USER' | translate}}</legend>
         <div class="form-group">
             <label for="inputEmail" class="col-lg-2 control-label">E-mail</label>
             <div class="col-lg-10">
@@ -8,19 +8,19 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="inputUsuario" class="col-lg-2 control-label">Nome de Usuário</label>
+            <label for="inputUsuario" class="col-lg-2 control-label">{{'USER_NAME' | translate}}</label>
             <div class="col-lg-10">
                 <input type="text" ng-model="usuario.nome_usuario" class="form-control" id="inputUsuario" placeholder="fulano@tal.com">
             </div>
         </div>
         <div class="form-group">
-            <label for="inputSenha" class="col-lg-2 control-label">Senha</label>
+            <label for="inputSenha" class="col-lg-2 control-label">{{'PASSWORD' | translate}}</label>
             <div class="col-lg-10">
                 <input type="password" ng-model="usuario.senha" class="form-control" id="inputSenha">
             </div>
         </div>
         <div class="form-group">
-            <label for="inputConfirmaSenha" class="col-lg-2 control-label">Confirma Senha</label>
+            <label for="inputConfirmaSenha" class="col-lg-2 control-label">{{'CONFIRM_PASSWORD' | translate}}</label>
             <div class="col-lg-10">
                 <input type="password" ng-model="usuario.confirma_senha" class="form-control" id="inputConfirmaSenha">
             </div>

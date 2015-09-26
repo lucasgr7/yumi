@@ -1,0 +1,15 @@
+{
+    "HOME": "Inicio",
+    "LANGUAGE": "Linguagem",
+    "REGISTER": "Cadastro",
+    "SYSTEM" : "Sistema",
+    "USER" : "Usuário",
+    "GAME" : "Jogo",
+    "GENERATE_SOLDIER" : "Gerar Soldado",
+    "CREATE_SOLDIER" : "Criar Soldado",
+    
+    "NEW_USER" : "Novo Usuário",
+    "USER_NAME" : "Nome do Usuário",
+    "PASSWORD" : "Senha",
+    "CONFIRM_PASSWORD" : "Confirma Senha"
+}
