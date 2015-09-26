@@ -1,15 +1,34 @@
-<h3>Novo Usuário</h3>
-
-<label>E-mail</label>
-<input type="text" ng-model="usuario.email" />
-<label>Nome de Usuário</label>
-<input type="text" ng-model="usuario.nome_usuario" />
-<label>Senha</label>
-<input type="password" ng-model="usuario.senha" />
-<label>Confirma Senha</label>
-<input type="password" ng-model="usuario.confirma_senha" />
-<button ng-click="salvarUsuario()">Salvar</button>
-
+<form class="form-horizontal">
+    <fieldset>
+        <legend>Novo Usuário</legend>
+        <div class="form-group">
+            <label for="inputEmail" class="col-lg-2 control-label">E-mail</label>
+            <div class="col-lg-10">
+                <input type="email" ng-model="usuario.email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputUsuario" class="col-lg-2 control-label">Nome de Usuário</label>
+            <div class="col-lg-10">
+                <input type="text" ng-model="usuario.nome_usuario" class="form-control" id="inputUsuario" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputSenha" class="col-lg-2 control-label">Senha</label>
+            <div class="col-lg-10">
+                <input type="password" ng-model="usuario.senha" class="form-control" id="inputSenha">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputConfirmaSenha" class="col-lg-2 control-label">Confirma Senha</label>
+            <div class="col-lg-10">
+                <input type="password" ng-model="usuario.confirma_senha" class="form-control" id="inputConfirmaSenha">
+            </div>
+        </div>
+    </fieldset>
+    <button  ng-click="salvarUsuario()" class="btn btn-success btn-fab btn-raised mdi-action-done"></button>
+</form>
+<hr/>
 <pre>
     Magia do angular:
 {{usuario}}

@@ -14,31 +14,67 @@
         <script src="core/angular/ngStorage.js"></script>
         <script src="core/angular/hotkeys.min.js"></script>
         <link href="core/angular/hotkeys.min.css" rel="stylesheet">
-        
+
+        <!--FONT-AWESOME-->
         <link href="core/font-awesome/css/font-awesome.css" rel="stylesheet">
         <script src="core/jquery/jquery-1.10.2.js"></script>
         <script src="core/angular/utils/ui-utils.min.js"></script>
-        
+
+        <!--TEMA-->
+        <link href="view/theme/boostrap/bootstrap.min.css" rel="stylesheet">
+        <script src="view/theme/boostrap/bootstrap.min.js"></script>
+        <link href="view/theme/material-ui/css/material.min.css" rel="stylesheet">
+        <link href="view/theme/material-ui/css/ripples.min.css" rel="stylesheet">
+        <link href="view/theme/material-ui/css/roboto.min.css" rel="stylesheet">
+        <script src="view/theme/material-ui/js/material.min.js"></script>
+        <script src="view/theme/material-ui/js/ripples.min.js"></script>
+
         <!--APP-->
         <!--BASE SISTEMA-->
         <script src="controller/base/base.js"></script>
         <!--FIM - BASE SISTEMA-->
-        
+
         <script src="controller/auxiliar/auxiliar.js"></script>
         <script src="controller/cadastro/usuario/controle_usuario.js"></script>
         <!--FIM - APP-->
 
     </head>
     <body class="body_pw">
-        <ul>
-            <li>Cadastro</li>
-            <li><a href="#/cadastro/usuario">Usuário</a></li>
-            <li>Jogo</li>
-            <li><a href="#/jogo/gerarSoldado">Gerar Soldado</a></li>
-        </ul>
-        <div id="page-wrapper">
-            <div ng-view>
-                
+        <div class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="javascript:void(0)">Proxy Wars - ADMIN</a>
+            </div>
+            <div class="navbar-collapse collapse navbar-inverse-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="javascript:void(0)">Home</a></li>
+                    <li class="dropdown">
+                        <a href="" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Cadastro<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">Sistema</li>
+                            <li><a href="#/cadastro/usuario">Usuário</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Jogo</li>
+                            <li><a href="#/jogo/gerarSoldado">Gerar Soldado</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <input type="text" class="form-control col-lg-8" placeholder="Search">
+                </form>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div ng-view>
+
+                    </div>
+                </div>
             </div>
         </div>
     </body>
