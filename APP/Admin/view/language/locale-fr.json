@@ -1,15 +1,15 @@
 {
-    "HOME": "Maison",
+    "HOME": "Accueil",
     "LANGUAGE": "Langue",
-    "REGISTER" : "Cadastre",
+    "REGISTER" : "S'enregistrer",
     "SYSTEM" : "Système",
     "USER" : "Utilisateur",
     "GAME" : "Jeu",
     "GENERATE_SOLDIER" : "Générer Soldat",
     "CREATE_SOLDIER" : "Créer Soldat",
     
-    "NEW_USER" : "New User",
-    "USER_NAME" : "Username",
-    "PASSWORD" : "Password",
-    "CONFIRM_PASSWORD" : "Confirm Password"
+    "NEW_USER" : "Nouvel utilisateur",
+    "USER_NAME" : "Nom d'utilisateur",
+    "PASSWORD" : "Mot de passe",
+    "CONFIRM_PASSWORD" : "Confirmation mot de passe"
 }
