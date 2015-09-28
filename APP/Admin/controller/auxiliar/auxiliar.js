@@ -3,6 +3,10 @@ yumiAdmin.service('aux', function () {
         gerarRandomKey: function () {
             return  Math.floor((Math.random() * 10000) + 1);
         },
+		getLucky: function (chance) {
+			var random = Math.floor(Math.random() * 100)+1;
+			return (random <= chance);	
+		},
         getDataAtual: function () {
             var today = new Date();
             var dd = today.getDate();
