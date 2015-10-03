@@ -39,8 +39,8 @@
         <script src="controller/auxiliar/auxiliar.js"></script>
         <script src="controller/auxiliar/i18n.js"></script>
         <script src="controller/cadastro/usuario/controle_usuario.js"></script>
-        
-        
+
+
         <link href="view/theme/sistema/estilo.css" rel="stylesheet">
         <!--FIM - APP-->
 
@@ -59,20 +59,20 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="javascript:void(0)">{{ 'HOME' | translate}}</a></li>
                     <li class="dropdown">
-                        <a href="" data-target="#" class="dropdown-toggle" data-toggle="dropdown">{{'REGISTER' | translate}}<b class="caret"></b></a>
+                        <a href="" data-target="#" class="dropdown-toggle" data-toggle="dropdown">{{'REGISTER'| translate}}<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li class="dropdown-header">{{'SYSTEM' | translate }}</li>
-                            <li><a href="#/cadastro/usuario">{{'USER' | translate }}</a></li>
+                            <li class="dropdown-header">{{'SYSTEM'| translate }}</li>
+                            <li><a href="#/cadastro/usuario">{{'USER'| translate }}</a></li>
                             <li class="divider"></li>
-                            <li class="dropdown-header">{{'GAME' | translate }}</li>
-                            <li><a href="#/jogo/gerarSoldado">{{'GENERATE_SOLDIER' | translate }}</a></li>
-                            <li><a href="#/jogo/gerarSoldado">{{'CREATE_SOLDIER' | translate }}</a></li>
+                            <li class="dropdown-header">{{'GAME'| translate }}</li>
+                            <li><a href="#/jogo/gerarSoldado">{{'GENERATE_SOLDIER'| translate }}</a></li>
+                            <li><a href="#/jogo/gerarSoldado">{{'CREATE_SOLDIER'| translate }}</a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right" ng-controller='linguagemControle'>
                     <li class="dropdown">
-                        <a href="index.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown"><img src="blank.gif" class="{{linguagem_selecionada}}" alt="Linguagem" /> {{'LANGUAGE' | translate}} <b class="caret"></b></a>
+                        <a href="index.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown"><img src="blank.gif" class="{{linguagem_selecionada}}" alt="Linguagem" /> {{'LANGUAGE'| translate}} <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="" ng-click='mudarLinguagem("pt-BR", "flag flag-br")'><img src="blank.gif" class="flag flag-br" alt="Português" /> Português</a></li>
                             <li><a href="" ng-click='mudarLinguagem("en", "flag flag-us")'><img src="blank.gif" class="flag flag-us" alt="English" /> English</a></li>
