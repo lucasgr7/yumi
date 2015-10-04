@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'rest_framework',
     'corsheaders',
     'usuario',
+    'jogo',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -55,6 +56,13 @@ ROOT_URLCONF = 'web_service.urls'
 
 WSGI_APPLICATION = 'web_service.wsgi.application'
 
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES':('rest_framework.permissions.IsAdminUser',),
+    'PAGE_SIZE': 50,
+    'DEFAULT_AUTHENTICATION_CLASSES': [],
+    'DEFAULT_PERMISSION_CLASSES': [],
+}
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
