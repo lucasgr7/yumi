@@ -16,6 +16,8 @@
         <link href="core/angular/hotkeys.min.css" rel="stylesheet">
         <script src="core/angular/i18n/angular-translate.js" ></script>
         <script src="core/angular/i18n/angular-translate-loader-url.js" ></script>
+        <script src="core/angular/color-picker/ngjs-color-picker.js" ></script>
+        <link href="core/angular/color-picker/ngjs-color-picker.css" rel="stylesheet">
 
         <!--FONT-AWESOME-->
         <link href="core/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -39,6 +41,7 @@
         <script src="controller/auxiliar/auxiliar.js"></script>
         <script src="controller/auxiliar/i18n.js"></script>
         <script src="controller/cadastro/usuario/controle_usuario.js"></script>
+        <script src="controller/cadastro/exercito/controle_exercito.js"></script>
 
 
         <link href="view/theme/sistema/estilo.css" rel="stylesheet">
@@ -46,7 +49,7 @@
 
     </head>
     <body class="body_pw">
-        <div class="navbar navbar-inverse">
+        <div class="navbar navbar-inverse" style="background-color : {{cor_painel}}">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
                     <span class="icon-bar"></span>
@@ -67,6 +70,8 @@
                             <li class="dropdown-header">{{'GAME'| translate }}</li>
                             <li><a href="#/jogo/gerarSoldado">{{'GENERATE_SOLDIER'| translate }}</a></li>
                             <li><a href="#/jogo/gerarSoldado">{{'CREATE_SOLDIER'| translate }}</a></li>
+                            <li><a href="#/cadastro/tatic">{{'CREATE_TATIC'| translate }}</a></li>
+                            <li><a href="#/cadastro/exercito">{{'CREATE_ARMY'| translate }}</a></li>
                         </ul>
                     </li>
                 </ul>

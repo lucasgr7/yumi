@@ -1,3 +1,31 @@
-
-<h3>{{'USER' | translate}}</h3>
-<a href="#/cadastro/usuario/novo" class="btn btn-default btn-fab btn-raised mdi-content-add"></a>
+<div ng-init="listarUsuarios()">
+    <h3>{{'USER'| translate}}</h3>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <a href="#/cadastro/usuario/novo" class="btn btn-success btn-fab btn-raised mdi-content-add"></a>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>{{'NAME' | translate}}</th>
+                    <th>E-mail</th>
+                    <th>#</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="usuario in usuarios">
+                    <td>{{usuario.id}}</td>
+                    <td>{{usuario.nome}}</td>
+                    <td>{{usuario.email}}</td>
+                    <td>
+                        <a href="" ng-click="editarUsuario(usuario)" class="btn btn-primary">{{'EDIT' | translate}}</a>
+                        <a href="" ng-click="excluirUsuario(usuario)" class="btn btn-danger">{{'DELETE' | translate}}</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
