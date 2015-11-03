@@ -1,0 +1,29 @@
+{
+    "HOME": "Inicio",
+    "LANGUAGE": "Linguagem",
+    "REGISTER": "Cadastro",
+    "SYSTEM" : "Sistema",
+    "USER" : "Usuário",
+    "GAME" : "Jogo",
+    "GENERATE_SOLDIER" : "Gerar Soldado",
+    "CREATE_SOLDIER" : "Criar Soldado",
+    "CREATE_ARMY" : "Criar Exército",
+    "ARMY" : "Exército",
+    "SLOGAN" : "Slogan",
+    "COLOR" : "Cor",
+    "FLAG" : "Bandeira",
+    "CREATE_TATIC" : "Criar Tática",
+    
+    "NEW_USER" : "Novo Usuário",
+    "USER_NAME" : "Nome do Usuário",
+    "PASSWORD" : "Senha",
+    "CONFIRM_PASSWORD" : "Confirma Senha",
+    "NAME" : "Nome",
+    "EDIT" : "Editar",
+    "DELETE" : "Deletar",
+    
+    "NEW" : "Novo",
+    "CONFIRM_DELETE_MESSAGE" : "Confirma a exclusão desse item?",
+    "SUCCESS_UPDATE_MESSAGE" : "Registro atualizado com sucesso!",
+    "SUCCESS_DELETE_MESSAGE" : "Registro excluido com sucesso"
+}

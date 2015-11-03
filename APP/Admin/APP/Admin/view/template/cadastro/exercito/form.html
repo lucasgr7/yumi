@@ -1,0 +1,43 @@
+<form class="form-horizontal" ng-init='init()'>
+    <fieldset>
+        <legend>{{'NEW'| translate}} {{'ARMY'| translate}}</legend>
+        <div class="form-group">
+            <label for="exercito_nome" class="col-lg-2 control-label">{{'ARMY'| translate}}</label>
+            <div class="col-lg-10">
+                <input type="text" ng-model="exercito.nome" class="form-control" id="exercito_nome" placeholder="House Stark">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exercito_slogan" class="col-lg-2 control-label">{{'SLOGAN'| translate}}</label>
+            <div class="col-lg-10">
+                <input type="text" ng-model="exercito.slogan" class="form-control" id="exercito_slogan" placeholder="Winter is comming">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exercito_cor" class="col-lg-2 control-label">{{'COLOR'| translate}}</label>
+            <div class="col-lg-10">
+                <input type="text" ng-change="cor_mudou();" colorpicker  ng-model="exercito.cor" class="form-control" id="exercito_cor">
+                <ngjs-color-picker selected="exercito.cor"  options="optionsRandom" ng-click="cor_mudou()" ></ngjs-color-picker>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exercito_bandeira" class="col-lg-2 control-label">{{'FLAG'| translate}}</label>
+            <div class="col-lg-6">
+                <input type="text" ng-model="exercito.bandeira" class="form-control" id="exercito_bandeira">
+            </div>
+            <div class='col-lg-4'>
+                <a href="{{exercito.bandeira}}" target="_blank" class="thumbnail">
+                    <img src="{{exercito.bandeira}}" class="img-responsive " >
+                </a>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exercito_usuario" class="col-lg-2 control-label">{{'USER'| translate}}</label>
+            <div class="col-lg-10">
+                <select  class="form-control" id="select" ng-model="exercito.usuario" ng-options="usuario.nome for usuario in usuarios" ></select>
+            </div>
+        </div>
+    </fieldset>
+    <button  ng-click="salvar()" class="btn btn-success btn-fab btn-raised mdi-action-done"></button>
+</form>
+<hr/>

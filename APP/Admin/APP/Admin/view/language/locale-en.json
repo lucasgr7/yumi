@@ -1,0 +1,30 @@
+{
+    "HOME": "Home",
+    "LANGUAGE": "Language",
+    "REGISTER" : "Register",
+    "SYSTEM" : "System",
+    "USER" : "User",
+    "GAME" : "Game",
+    "GENERATE_SOLDIER" : "Generate Soldier",
+    "CREATE_SOLDIER" : "Create Soldier",
+    "CREATE_ARMY" : "Create Army",
+    "CREATE_TATIC" : "Create Tatic",
+    
+    "ARMY" : "Army",
+    "SLOGAN" : "Slogan",
+    "COLOR" : "Couleur",
+    "FLAG" : "Flag",
+    
+    "NEW_USER" : "New User",
+    "USER_NAME" : "Username",
+    "PASSWORD" : "Password",
+    "CONFIRM_PASSWORD" : "Confirm Password",
+    "NAME" : "Name",
+    "EDIT" : "Edit",
+    "DELETE" : "Delete",
+    
+    "NEW" : "New",
+    "CONFIRM_DELETE_MESSAGE" : "Confirm delete this item?",
+    "SUCCESS_UPDATE_MESSAGE" : "Register save successfull",
+    "SUCCESS_DELETE_MESSAGE" : "Register deleted successfull"
+}

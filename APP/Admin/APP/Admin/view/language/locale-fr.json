@@ -1,0 +1,28 @@
+{
+    "HOME": "Accueil",
+    "LANGUAGE": "Langue",
+    "REGISTER" : "S'enregistrer",
+    "SYSTEM" : "Système",
+    "USER" : "Utilisateur",
+    "GAME" : "Jeu",
+    "GENERATE_SOLDIER" : "Générer Soldat",
+    "CREATE_SOLDIER" : "Créer Soldat",
+    "CREATE_ARMY" : "",
+    "ARMY" : "",
+    "SLOGAN" : "Slogan",
+    "COLOR" : "Color",
+    "FLAG" : "",
+    
+    "NEW_USER" : "Nouvel utilisateur",
+    "USER_NAME" : "Nom d'utilisateur",
+    "PASSWORD" : "Mot de passe",
+    "CONFIRM_PASSWORD" : "Confirmation mot de passe",
+    "NAME" : "",
+    "EDIT" : "",
+    "DELETE" : "",
+    
+    "NEW" : "Nouvelle",
+    "CONFIRM_DELETE_MESSAGE" : "",
+    "SUCCESS_UPDATE_MESSAGE" : "",
+    "SUCCESS_DELETE_MESSAGE" : ""
+}

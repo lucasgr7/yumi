@@ -1,0 +1,35 @@
+<div ng-init="listarExercitos()">
+    <h3>{{'USER'| translate}}</h3>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <a href="#/cadastro/exercito/novo" class="btn btn-success btn-fab btn-raised mdi-content-add"></a>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>{{'NAME' | translate}}</th>
+                    <th>Slogan</th>
+                    <th>Cor</th>
+                    <th>Imagem</th>
+                    <th>#</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="exercito in exercitos">
+                    <td>{{exercito.id}}</td>
+                    <td>{{exercito.nome}}</td>
+                    <td>{{exercito.slogan}}</td>
+                    <td><div style="background-color: {{exercito.cor}}" class="quadrado"></div></td>
+                    <td><img class="quadrado" src="{{exercito.bandeira}}" /></td>
+                    <td>
+                        <a href="" ng-click="editar(exercito)" class="btn btn-primary">{{'EDIT' | translate}}</a>
+                        <a href="" ng-click="excluir(exercito)" class="btn btn-danger">{{'DELETE' | translate}}</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
