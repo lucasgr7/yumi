@@ -15,7 +15,7 @@ import json
 def inserir(request):
     if request.method == 'POST':
         dados = json.loads(request.body)
-        
+
         if 'id' not in dados:
             dados['id'] = None
             

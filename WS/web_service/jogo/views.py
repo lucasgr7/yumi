@@ -9,7 +9,7 @@ from rest_framework.decorators import api_view
 from rest_framework.permissions import IsAdminUser
 from django.shortcuts import HttpResponse
 from django.core import serializers
-from jogo.exercitoApi import ExercitoApi
+from jogo.serializerApi import ExercitoApi, TaticApi
 import json
 
 # Create your views here.
@@ -61,3 +61,10 @@ def inserir_tatic(request):
                         )
     new_tatic.save()
     return HttpResponse('INSERT - OK')
+
+@api_view(['GET',])
+def list_tatic(request):
+    tatics = Tatic.objects.all()
+    taticApi = TaticApi(tatics, many=True)
+    # print exercitoApi
+    return Response(taticApi.data)
