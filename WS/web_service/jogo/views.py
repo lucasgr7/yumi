@@ -1,6 +1,6 @@
 from django.shortcuts import render, HttpResponseRedirect, HttpResponse
 from usuario.models import Usuario
-from jogo.models import Exercito
+from jogo.models import Exercito, Tatic
 
 from rest_framework import status, viewsets, filters
 from rest_framework.response import Response
@@ -16,7 +16,7 @@ import json
 def inserir_exercito(request):
     if request.method == 'POST':
         dados = json.loads(request.body)
-        print dados
+        # print dados
         if 'id' not in dados:
             dados['id'] = None
             
@@ -36,10 +36,28 @@ def inserir_exercito(request):
 def list_exercito(request):
     exercitos = Exercito.objects.all()
     exercitoApi = ExercitoApi(exercitos, many=True)
-    print exercitoApi
+    # print exercitoApi
     return Response(exercitoApi.data)
 
 def delete(request, codigo):
     exercito = Exercito.objects.get(pk=codigo)
     exercito.delete()
     return HttpResponse('DELETE - OK')
+
+def inserir_tatic(request):
+    if request.method == 'POST':
+        dados = json.loads(request.body)
+        # print dados
+        if 'id' not in dados:
+            dados['id'] = None
+
+        new_tatic = Tatic(
+                        id=dados['id'],
+                        nome=dados['nome'],
+                        foto=dados['foto'],
+                        required_ofensa=dados['required_ofensa'],
+                        required_defesa=dados['required_defesa'],
+                        required_estrategia=dados['required_estrategia']
+                        )
+    new_tatic.save()
+    return HttpResponse('INSERT - OK')

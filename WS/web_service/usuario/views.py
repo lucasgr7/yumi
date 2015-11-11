@@ -33,7 +33,7 @@ def inserir(request):
 def list(request):
     usuarios = Usuario.objects.all()
     usuarioApi = UsuarioApi(usuarios, many=True)
-    print usuarioApi
+    # print usuarioApi
     return Response(usuarioApi.data)
 
 def delete(request, codigo):
