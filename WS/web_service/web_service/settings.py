@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'corsheaders',
     'usuario',
     'jogo',
+    'vocabulary',
 )
 
 MIDDLEWARE_CLASSES = (
