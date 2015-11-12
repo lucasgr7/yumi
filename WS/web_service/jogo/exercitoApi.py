@@ -7,4 +7,4 @@ class ExercitoApi(serializers.HyperlinkedModelSerializer):
     
     class Meta:
         model = Exercito
-        fields = ('id','nome','slogan','cor','bandeira', 'usuario')
+        fields = ('id','nome','slogan','cor','bandeira', 'usuario') 
