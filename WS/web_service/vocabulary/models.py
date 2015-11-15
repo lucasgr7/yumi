@@ -10,7 +10,7 @@ class Country(models.Model):
 
 class Personage(models.Model):
     name = models.CharField(max_length=20)
-    sex = models.CharField(max_length=128)
+    sex = models.CharField(max_length=20)
     description = models.CharField(max_length=250)
     country = models.ForeignKey('Country')
     

@@ -3,6 +3,7 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
 
+
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'web_service.views.home', name='home'),
@@ -12,5 +13,6 @@ urlpatterns = patterns('',
     url(r'^usuario/', include('usuario.urls')),
     url(r'^exercito/', include('jogo.urls_exercito')),
     url(r'^tatic/', include('jogo.urls_tatic')),
+    url(r'^soldato/', include('jogo.urls_soldato')),
     url(r'^personage/', include('vocabulary.urls')),
 )
