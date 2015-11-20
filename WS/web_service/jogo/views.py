@@ -76,6 +76,12 @@ def list_tatic(request):
     return Response(taticApi.data)
 
 
+def delete_tatic(request, codigo):
+    tatic = TaticApi.objects.get(pk=codigo)
+    tatic.delete()
+    return HttpResponse('DELETE - OK')
+
+
 def inserir_soldado(request):
     if request.method == 'POST':
         dados = json.loads(request.body)
