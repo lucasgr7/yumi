@@ -26,5 +26,9 @@
     "NEW" : "New",
     "CONFIRM_DELETE_MESSAGE" : "Confirm delete this item?",
     "SUCCESS_UPDATE_MESSAGE" : "Register save successfull",
-    "SUCCESS_DELETE_MESSAGE" : "Register deleted successfull"
+    "SUCCESS_DELETE_MESSAGE" : "Register deleted successfull",
+
+    "SOLDATO" : "SOLDIER",
+
+
 }

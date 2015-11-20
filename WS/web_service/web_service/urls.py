@@ -13,6 +13,6 @@ urlpatterns = patterns('',
     url(r'^usuario/', include('usuario.urls')),
     url(r'^exercito/', include('jogo.urls_exercito')),
     url(r'^tatic/', include('jogo.urls_tatic')),
-    url(r'^soldato/', include('jogo.urls_soldato')),
+    url(r'^soldado/', include('jogo.urls_soldado')),
     url(r'^personage/', include('vocabulary.urls')),
 )

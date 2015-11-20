@@ -27,6 +27,9 @@ yumiAdmin.config(['$routeProvider', function ($routeProvider) {
         }).when('/cadastro/tatic', {
             templateUrl: 'view/template/cadastro/tatic/form.html',
             controller: 'controle_exercito'
+        }).when('/cadastro/soldado/', {
+            templateUrl: 'view/template/cadastro/soldado/lista.html',
+            controller: 'controle_soldato'
         }).otherwise({
             redirectTo: '/'
         });
@@ -43,6 +46,6 @@ yumiAdmin.config(['$translateProvider', function ($translateProvider) {
     }]);
 
 yumiAdmin.run(function($rootScope){
-    $rootScope.servidor_url = 'http://lucas-pc:90';
+    $rootScope.servidor_url = 'http://127.0.0.1:90';
     $rootScope.cor_painel = "#3f51b5";
 })

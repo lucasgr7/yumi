@@ -68,7 +68,7 @@ def inserir_tatic(request):
     return HttpResponse('INSERT - OK')
 
 
-@api_view(['GET',])
+@api_view(['GET'])
 def list_tatic(request):
     tatics = Tatic.objects.all()
     taticApi = TaticApi(tatics, many=True)
@@ -101,7 +101,7 @@ def inserir_soldado(request):
     return HttpResponse('INSERT - OK')
 
 
-@api_view(['GET',])
+@api_view(['GET'])
 def list_soldado(request):
     soldados = Soldado.objects.all()
     soldadoApi = SoldadoApi(soldados, many=True)

@@ -1,0 +1,49 @@
+<div ng-init="listarSoldados()" >
+    <h3>{{'SOLDATO'| translate}}</h3>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <a href="#/cadastro/soldado/novo" class="btn btn-success btn-fab btn-raised mdi-content-add"></a>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Foto</th>
+                    <th>Forca</th>
+                    <th>Escudo</th>
+                    <th>Mira</th>
+                    <th>Max (hp)</th>
+                    <th>HP</th>
+                    <th>Tatics ofensa</th>
+                    <th>Tatics defesa</th>
+                    <th>Tatics estrategia</th>
+                    <th>#</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="soldado in soldados">
+                    <td>{{soldado.id}}</td>
+                    <td>{{soldado.nome}}</td>
+                    <td><img class="quadrado" src="{{soldado.foto}}" /></td>
+                    <td>{{soldado.forca}}</td>
+                    <td>{{soldado.escudo}}</td>
+                    <td>{{soldado.mira}}</td>
+                    <td>{{soldado.max_hp}}</td>
+                    <td>{{soldado.hp}}</td>
+                    <td>{{soldado.tatics_ofensa}}</td>
+                    <td>{{soldado.tatics_defesa}}</td>
+                    <td>{{soldado.tatics_estrategia}}</td>
+<!--                    <td>
+                        <a href="" ng-click="editarUsuario(usuario)" class="btn btn-primary">{{'EDIT' | translate}}</a>
+                        <a href="" ng-click="excluirUsuario(usuario)" class="btn btn-danger">{{'DELETE' | translate}}</a>
+                    </td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

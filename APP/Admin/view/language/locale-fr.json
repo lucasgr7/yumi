@@ -24,5 +24,7 @@
     "NEW" : "Nouvelle",
     "CONFIRM_DELETE_MESSAGE" : "",
     "SUCCESS_UPDATE_MESSAGE" : "",
-    "SUCCESS_DELETE_MESSAGE" : ""
+    "SUCCESS_DELETE_MESSAGE" : "",
+
+    "SOLDATO" : "SOLDAT"
 }

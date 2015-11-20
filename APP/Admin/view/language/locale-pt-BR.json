@@ -25,5 +25,7 @@
     "NEW" : "Novo",
     "CONFIRM_DELETE_MESSAGE" : "Confirma a exclusão desse item?",
     "SUCCESS_UPDATE_MESSAGE" : "Registro atualizado com sucesso!",
-    "SUCCESS_DELETE_MESSAGE" : "Registro excluido com sucesso"
+    "SUCCESS_DELETE_MESSAGE" : "Registro excluido com sucesso",
+
+    "SOLDATO" : "SOLDATO"
 }
