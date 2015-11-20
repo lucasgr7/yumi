@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'usuario',
     'jogo',
     'vocabulary',
+    'south'
 )
 
 MIDDLEWARE_CLASSES = (

@@ -11,3 +11,12 @@
     width: 50px;
     height: 50px;
 }
+.ofensa > .rz-pointer{
+    background-color: #FE0B0B;
+}
+.defesa > .rz-pointer{
+    background-color: #0933CA;
+}
+.estrategia > .rz-pointer{
+    background-color: #E3C21F;
+}

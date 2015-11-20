@@ -1,8 +1,8 @@
-<div ng-init="listarUsuarios()">
+<div ng-init="listar()">
     <h3>{{'TATIC'| translate}}</h3>
     <div class="panel panel-default">
         <div class="panel-body">
-            <a href="#/cadastro/usuario/novo" class="btn btn-success btn-fab btn-raised mdi-content-add"></a>
+            <a href="#/cadastro/tatic/novo" class="btn btn-success btn-fab btn-raised mdi-content-add"></a>
         </div>
     </div>
     <div class="table-responsive">
@@ -11,22 +11,25 @@
                 <tr>
                     <th>ID</th>
                     <th>{{'NAME' | translate}}</th>
-                    <th>Pts. Ofensivo</th>
-                    <th>Pts. Defensivo</th>
-                    <th>Pts. Estratégia</th>
+                    <th>Pts. {{'OFFENSE' | translate}}</th>
+                    <th>Pts. {{'DEFENSE' | translate}}</th>
+                    <th>Pts. {{'ESTRATEGY' | translate}}</th>
                     <th>#</th>
                 </tr>
             </thead>
             <tbody>
-<!--                <tr ng-repeat="usuario in usuarios">
-                    <td>{{usuario.id}}</td>
-                    <td>{{usuario.nome}}</td>
-                    <td>{{usuario.email}}</td>
+                <tr ng-repeat="tatic in tatics">
+                    <td>{{tatic.id}}</td>
+                    <td>{{tatic.nome}}</td>
+                    <td>{{tatic.required_ofensa}}</td>
+                    <td>{{tatic.required_defesa}}</td>
+                    <td>{{tatic.required_estrategia}}</td>
+                    <td><img class="quadrado" src="{{tatic.foto}}" /></td>
                     <td>
                         <a href="" ng-click="editarUsuario(usuario)" class="btn btn-primary">{{'EDIT' | translate}}</a>
                         <a href="" ng-click="excluirUsuario(usuario)" class="btn btn-danger">{{'DELETE' | translate}}</a>
                     </td>
-                </tr>-->
+                </tr>
             </tbody>
         </table>
     </div>

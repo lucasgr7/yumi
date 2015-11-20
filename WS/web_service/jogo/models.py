@@ -24,6 +24,8 @@ class Soldado(models.Model):
     
 class Tatic(models.Model):
     nome = models.CharField(max_length=60)
+    descricao = models.CharField(max_length=350)
+    chance = models.IntegerField()
     foto = models.CharField(max_length=300)
     required_ofensa = models.IntegerField()
     required_defesa = models.IntegerField()

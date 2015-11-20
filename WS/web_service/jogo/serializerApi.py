@@ -15,7 +15,7 @@ class ExercitoApi(serializers.HyperlinkedModelSerializer):
 class TaticApi(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Tatic
-        fields = ('id', 'nome', 'foto', 'required_ofensa', 'required_defesa', 'required_estrategia')
+        fields = ('id', 'nome', 'foto', 'required_ofensa', 'required_defesa', 'required_estrategia', 'chance', 'descricao')
 
 
 class SoldadoApi(serializers.HyperlinkedModelSerializer):

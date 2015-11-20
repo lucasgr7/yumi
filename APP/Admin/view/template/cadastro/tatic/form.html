@@ -1,16 +1,54 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
-</html>
+<form class="form-horizontal" ng-init='init()'>
+    <fieldset>
+        <legend>{{'NEW'| translate}} {{'TATIC'| translate}}</legend>
+        <div class="form-group">
+            <label for="tatic_name" class="col-lg-2 control-label">{{'TATIC'| translate}}</label>
+            <div class="col-lg-10">
+                <input type="text" ng-model="tatic.nome" class="form-control" id="tatic_name" placeholder="Snipping">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="tatic_description" class="col-lg-2 control-label">{{'DESCRIPTION'| translate}}</label>
+            <div class="col-lg-10">
+                <input type="text" ng-model="tatic.descricao" class="form-control" id="tatic_description" placeholder="{{'DESCRIPTION_TATIC_INFO' | translate}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="tatic_chance" class="col-lg-2 control-label">{{'DESCRIPTION'| translate}}</label>
+            <div class="col-lg-10">
+                <input type="number" ng-model="tatic.chance" class="form-control" id="tatic_description">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="tatic_required_offense" class="col-lg-2 control-label">{{'REQUIRED'| translate}} {{'OFFENSE'| translate}}</label>
+            <div class="col-lg-10">
+                <rzslider class="ofensa" rz-slider-model="tatic.required_ofensa"></rzslider>
+            </div>  
+        </div>
+        <div class="form-group">
+            <label for="tatic_required_defense" class="col-lg-2 control-label">{{'REQUIRED'| translate}} {{'DEFENSE'| translate}}</label>
+            <div class="col-lg-10">
+                <rzslider class="defesa" rz-slider-model="tatic.required_defesa"></rzslider>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="tatic_required_estrategic" class="col-lg-2 control-label">{{'REQUIRED'| translate}} {{'ESTRATEGY'| translate}}</label>
+            <div class="col-lg-10">
+                <rzslider class="estrategia"  rz-slider-model="tatic.required_estrategia"></rzslider>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="tatic_picture" class="col-lg-2 control-label">{{'PICTURE'| translate}}</label>
+            <div class="col-lg-6">
+                <input type="text" ng-model="tatic.foto" class="form-control" id="tatic_picture">
+            </div>
+            <div class='col-lg-4' ng-show="tatic.foto !== undefined">
+                <a href="{{tatic.foto}}" target="_blank" class="thumbnail">
+                    <img src="{{tatic.foto}}" class="img-responsive " >
+                </a>
+            </div>
+        </div>
+    </fieldset>
+    <button  ng-click="salvar()" class="btn btn-success btn-fab btn-raised mdi-action-done"></button>
+</form>
+<hr/>

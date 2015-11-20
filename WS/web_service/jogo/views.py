@@ -59,6 +59,8 @@ def inserir_tatic(request):
         new_tatic = Tatic(
                         id=dados['id'],
                         nome=dados['nome'],
+                        descricao=dados['descricao'],
+                        chance=dados['chance'],
                         foto=dados['foto'],
                         required_ofensa=dados['required_ofensa'],
                         required_defesa=dados['required_defesa'],

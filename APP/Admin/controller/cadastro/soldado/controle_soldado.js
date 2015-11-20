@@ -5,7 +5,7 @@ yumiAdmin.service('soldado_service', function ($http, $rootScope) {
         }
     };
 });
-yumiAdmin.controller('controle_usuario', function ($rootScope, $scope, $routeParams, $http, $location, $translate, usuario_service) {
+yumiAdmin.controller('controle_usuario', function ($rootScope, $scope, $http, $location, $translate, usuario_service) {
     
     $scope.init = function () {
         try {

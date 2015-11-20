@@ -1,4 +1,4 @@
-var yumiAdmin = angular.module('yumiAdmin', ['ngRoute', 'pascalprecht.translate', 'ngjsColorPicker'
+var yumiAdmin = angular.module('yumiAdmin', ['ngRoute', 'pascalprecht.translate', 'ngjsColorPicker', 'rzModule'
 //    'ngStorage',
 //    'cfp.hotkeys',
 //    'ngSanitize'
@@ -25,8 +25,11 @@ yumiAdmin.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'view/template/cadastro/exercito/form.html',
             controller: 'controle_exercito'
         }).when('/cadastro/tatic', {
+            templateUrl: 'view/template/cadastro/tatic/lista.html',
+            controller: 'controle_tatic'
+        }).when('/cadastro/tatic/novo', {
             templateUrl: 'view/template/cadastro/tatic/form.html',
-            controller: 'controle_exercito'
+            controller: 'controle_tatic'
         }).otherwise({
             redirectTo: '/'
         });
