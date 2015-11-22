@@ -25,8 +25,8 @@ yumiAdmin.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'view/template/cadastro/exercito/form.html',
             controller: 'controle_exercito'
         }).when('/cadastro/tatic', {
-            templateUrl: 'view/template/cadastro/tatic/form.html',
-            controller: 'controle_exercito'
+            templateUrl: 'view/template/cadastro/tatic/lista.html',
+            controller: 'controle_usuario'
         }).when('/cadastro/soldado/', {
             templateUrl: 'view/template/cadastro/soldado/lista.html',
             controller: 'controle_soldato'

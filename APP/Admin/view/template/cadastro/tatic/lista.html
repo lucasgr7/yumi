@@ -5,28 +5,32 @@
             <a href="#/cadastro/usuario/novo" class="btn btn-success btn-fab btn-raised mdi-content-add"></a>
         </div>
     </div>
+
+
     <div class="table-responsive">
         <table class="table table-striped">
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>{{'NAME' | translate}}</th>
-                    <th>Pts. Ofensivo</th>
-                    <th>Pts. Defensivo</th>
-                    <th>Pts. Estratégia</th>
+                    <th>Chance</th>
                     <th>#</th>
                 </tr>
             </thead>
             <tbody>
-<!--                <tr ng-repeat="usuario in usuarios">
-                    <td>{{usuario.id}}</td>
-                    <td>{{usuario.nome}}</td>
-                    <td>{{usuario.email}}</td>
+                <tr>
+                    <!-- test row -->
+                    <td>{{1}}</td>
+                    <td>{{'Alex'}}</td>
+                    <td style="text-align: center" >
+                        <label for="slider">({{slider_value}}) </label>
+                        <input ng-model="slider_value" type="range" name="slider" id="slider" value="30" min="0" max="100" />
+                    </td>
                     <td>
                         <a href="" ng-click="editarUsuario(usuario)" class="btn btn-primary">{{'EDIT' | translate}}</a>
                         <a href="" ng-click="excluirUsuario(usuario)" class="btn btn-danger">{{'DELETE' | translate}}</a>
                     </td>
-                </tr>-->
+                </tr>
             </tbody>
         </table>
     </div>
